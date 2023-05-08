@@ -5,37 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB v 1.0</title>
+    <title>WEB v 1.2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3cd6b04dad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
-    <nav id="nav" class="nav nav__desktop">
-        <a href="#home" class="nav__title">
-            <h2 class="nav__logo">workout<span class="nav__logo-span">Club</span></h2>
+    <nav class="nav">
+        <a href="#home" class="nav__logo">
+            <h2 class="nav__title">workout<span class="nav__span">Club</span></h2>
         </a>
-        <ul class="nav__desktop-list">
-            <li class="nav__desktop-item"><a href="#aboutus" class="nav__desktop-link">o nas</a></li>
-            <li class="nav__desktop-item"><a href="#offer" class="nav__desktop-link">oferta</a></li>
-            <li class="nav__desktop-item"><a href="#reviews" class="nav__desktop-link">opinie</a></li>
-            <li class="nav__desktop-item "><a href="#contact" class="nav__desktop-link">kontakt</a></li>
-        </ul>
-    </nav>
-
-    <nav id="nav" class="nav nav__mobile">
-        <a href="#home" class="nav__title">
-            <h2 class="nav__logo">workout<span class="nav__logo-span">Club</span></h2>
-        </a>
-        <ul class="nav__mobile-list">
-            <li class="nav__mobile-item"><a href="#aboutus" class="nav__mobile-link">o nas</a></li>
-            <li class="nav__mobile-item"><a href="#offer" class="nav__mobile-link">oferta</a></li>
-            <li class="nav__mobile-item"><a href="#reviews" class="nav__mobile-link">opinie</a></li>
-            <li class="nav__mobile-item"><a href="#contact" class="nav__mobile-link">kontakt</a></li>
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="#home" class="nav__link">strona główna</a></li>
+            <li class="nav__list-item"><a href="#about" class="nav__link">o nas</a></li>
+            <li class="nav__list-item"><a href="#offers" class="nav__link">oferta</a></li>
+            <li class="nav__list-item"><a href="#reviews" class="nav__link">opinie</a></li>
+            <li class="nav__list-item "><a href="#contact" class="nav__link">kontakt</a></li>
         </ul>
         <button class="nav__btn">
             <div class="nav__btn-line"></div>
@@ -43,16 +33,254 @@
             <div class="nav__btn-line"></div>
         </button>
     </nav>
-   
+
+
     <header class="header" id="home">
-            <div class="header__shadow"></div>
-       <p>to jest jakiś paragraf</p>
+        <h1 class="header__heading">Z nami zaczyna się Twoja <span>forma</span></h1>
+        <span class="header__text">na lata...</span>
+        <a class="header__link" href="#offers">
+            <div class="header__arrow">
+                <img src="./img/icons/chevrons-down.svg" alt="" class="header__arrow-icon">
+            </div>
+        </a>
+        <div class="header__shadow"></div>
     </header>
 
-    <main class="main" id="main">
-   
+    <main class="main">
+        <section class="about section" id="about">
+            <div class="wrapper">
+                <h2 class="section-title">Poznaj nas</h2>
+                <div class="about__box">
+                    <div class="about__box-img">
+                        <img src="./img/equipment.jpg" alt="" class="about__img">
+                    </div>
+                    <div class="about__box-text">
+                        <h3 class="about__title">Wolne ciężary</h3>
+                        <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+                            delectus
+                            sint dignissimos ea, odio totam molestias harum officia doloribus magni! Magnam, labore
+                            eveniet.
+                            Animi eum rem eaque omnis aliquid! Non?</p>
+                    </div>
+                </div>
+                <div class="about__box about__box-second">
+                    <div class="about__box-img">
+                        <img src="./img/gym.jpg" alt="" class="about__img about__img-second">
+                    </div>
+                    <div class="about__box-text">
+                        <h3 class="about__title">Nowoczesne maszyny</h3>
+                        <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+                            delectus
+                            sint dignissimos ea, odio totam molestias harum officia doloribus magni! Magnam, labore
+                            eveniet.
+                            Animi eum rem eaque omnis aliquid! Non?</p>
+                    </div>
+                </div>
+                <div class="about__box">
+                    <div class="about__box-img">
+                        <img src="./img/group.jpg" alt="" class="about__img">
+                    </div>
+                    <div class="about__box-text">
+                        <h3 class="about__title">Zajęcia grupowe</h3>
+                        <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+                            delectus
+                            sint dignissimos ea, odio totam molestias harum officia doloribus magni! Magnam, labore
+                            eveniet.
+                            Animi eum rem eaque omnis aliquid! Non?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offers section" id="offers">
+            <div class="wrapper">
+                <h2 class="section-title">Oferta</h2>
+                <div class="offers__cards">
+                    <div class="offers__card">
+                        <div class="offers__card-shadow"></div>
+                        <div class="offers__card-text offers__card-text--one">
+                            <h3 class="offers__title">Karnet Standard</h3>
+                            <p class="offers__more">Więcej informacji<img src="./img/icons/chevrons-right.svg"
+                                    alt="more-info"></p>
+
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="offers__title">Karnet Standard</h3>
+                            <div class="offers__card-info--text">
+                                <p class="offers__text">Okres: <span class="offers__text-span"> 1 miesiąc</span></p>
+                                <p class="offers__text">Ilość wejść: <span class="offers__text-span">8</span></p>
+                                <p class="offers__text">Cena: <span class="offers__text-span">160 zł</span></p>
+                            </div>
+                            <button class="offers__btn">Wybieram</button>
+                        </div>
+                    </div>
+                    <div class="offers__card">
+                        <div class="offers__card-shadow"></div>
+                        <div class="offers__card-text offers__card-text--two">
+                            <h3 class="offers__title">Karnet Optimum</h3>
+                            <p class="offers__more">Więcej informacji<img src="./img/icons/chevrons-right.svg"
+                                    alt="more-info"></p>
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="offers__title">Karnet Optimum</h3>
+                            <div class="offers__card-info--text">
+                                <p class="offers__text">Okres: <span class="offers__text-span"> 3 miesiące</span></p>
+                                <p class="offers__text">Ilość wejść: <span class="offers__text-span">12</span></p>
+                                <p class="offers__text">Cena: <span class="offers__text-span">240 zł</span></p>
+                            </div>
+                            <button class="offers__btn">Wybieram</button>
+                        </div>
+                    </div>
+                    <div class="offers__card">
+                        <div class="offers__card-shadow"></div>
+                        <div class="offers__card-text offers__card-text--three">
+                            <h3 class="offers__title">Karnet VIP</h3>
+                            <p class="offers__more">Więcej informacji<img src="./img/icons/chevrons-right.svg"
+                                    alt="more-info"></p>
+                        </div>
+                        <div class="offers__card-info">
+                            <h3 class="offers__title">Karnet VIP</h3>
+                            <div class="offers__card-info--text">
+                                <p class="offers__text">Okres: <span class="offers__text-span"> 6 miesięcy</span></p>
+                                <p class="offers__text">Ilość wejść: <span class="offers__text-span">bez limitu</span>
+                                </p>
+                                <p class="offers__text">Cena: <span class="offers__text-span">300 zł</span></p>
+                            </div>
+                            <button class="offers__btn">Wybieram</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="reviews section" id="reviews">
+            <div class="wrapper">
+                <h2 class="section-title">opinie</h2>
+                <div class="reviews__boxes">
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-5.jpg" alt="Adam Mickiewicz">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                                numquam, similique unde fugiat voluptates modi eius aliquid alias! Eum nemo quod in
+                                fugiat incidunt doloremque debitis blanditiis consequuntur distinctio id.</p>
+                            <strong>Adam Mickiewicz</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-4.jpg" alt="Hanka Bielicka">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                                numquam, similique unde fugiat voluptates modi eius aliquid alias! Eum nemo quod in
+                                fugiat incidunt doloremque debitis blanditiis consequuntur distinctio id.</p>
+                            <strong>Hanka Bielicka</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-1.jpg" alt="Zbigniew Ogromny">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                                numquam, similique unde fugiat voluptates modi eius aliquid alias! Eum nemo quod in
+                                fugiat incidunt doloremque debitis blanditiis consequuntur distinctio id.</p>
+                            <strong>Zbigniew Ogromny</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/reviews-2-1.jpg" alt="Maria Skłodowska">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                                numquam, similique unde fugiat voluptates modi eius aliquid alias! Eum nemo quod in
+                                fugiat incidunt doloremque debitis blanditiis consequuntur distinctio id.</p>
+                            <strong>Maria Skłodowska</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="wrapper">
+                <h2 class="section-title">napisz do nas</h2>
+
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <div class="contact__form-box contact__form-box--one">
+                            <label for="name" class="contact__label">Imię: </label>
+                            <input type="text" id="name" class="contact__input">
+                        </div>
+                        <div class="contact__form-box contact__form-box--two">
+                            <label for="subname" class="contact__label">Nazwisko: </label>
+                            <input type="text" id="subname" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="email" class="contact__label">E-mail: </label>
+                        <input type="email" id="email" class="contact__input">
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="message" class="contact__label">Wiadomość: </label>
+                        <textarea class="contact__textarea" id="message"></textarea>
+                    </div>
+                    <button class="contact__form-btn">Wyślij</button>
+                </form>
+
+            </div>
+        </section>
     </main>
-<script src="./js/main.js"></script>
+    <footer class="footer section" id="footer">
+
+        <div class="footer__boxes">
+            <div class="footer__box footer__box-one">
+                <h3 class="footer__box-logo">workout<span>Club</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cupiditate sapiente quasi ut
+                    ducimus earum quibusdam corrupti corporis esse veritatis?</p>
+                <div class="footer__box-social">
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__box footer__box-two">
+                <h3 class="footer__box-title">Adres</h3>
+                <p class="footer__box-text">ul. Fitnessowa 3</p>
+                <p class="footer__box-text">85-123 Bydgoszcz</p>
+            </div>
+            <div class="footer__box footer__box-three">
+                <h3 class="footer__box-title">Kontakt</h3>
+                <p class="footer__box-text">Tel. 723 123 698</p>
+                <p class="footer__box-text">E-mail: workout@club.pl</p>
+
+            </div>
+        </div>
+
+
+        <hr>
+
+        <p class="footer__bottom-text">&copy; <span class="footer__year"> </span> Workout Club</p>
+
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
+<!-- <i class="fa-brands fa-instagram"></i> 
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+-->
 
 </html>
